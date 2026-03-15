@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cici Store</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:black;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:15px;
+background:black;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.logo img{
+width:80px;
+border-radius:10px;
+}
+
+.logo h1{
+color:#ff69b4;
+font-size:32px;
+margin:0;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h2{
+font-size:35px;
+color:#ff69b4;
+}
+
+/* PRODUK */
+
+.container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+padding:40px;
+}
+
+.card{
+background:#111;
+border-radius:15px;
+padding:20px;
+width:220px;
+text-align:center;
+box-shadow:0 0 12px #ff69b4;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:90px;
+height:70px;
+object-fit:contain;
+margin-bottom:10px;
+background:white;
+border-radius:6px;
+padding:5px;
+}
+
+.card h3{
+color:#ff69b4;
+}
+
+button{
+background:#ff69b4;
+border:none;
+padding:10px 20px;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:#ff1493;
+}
+
+/* TRAILER */
+
+.trailer{
+text-align:center;
+padding:60px 20px;
+}
+
+.trailer h2{
+color:#ff69b4;
+margin-bottom:30px;
+}
+
+.trailer-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.trailer img{
+width:320px;
+max-width:90%;
+border-radius:12px;
+box-shadow:0 0 12px #ff69b4;
+}
+
+/* PRICELIST */
+
+.pricelist{
+text-align:center;
+padding:60px 20px;
+}
+
+.pricelist h2{
+color:#ff69b4;
+}
+
+.price-box{
+background:#111;
+padding:30px;
+border-radius:15px;
+max-width:700px;
+margin:auto;
+box-shadow:0 0 15px #ff69b4;
+}
+
+.price-box h3{
+color:#ff69b4;
+margin-top:25px;
+}
+
+.payment{
+margin-top:40px;
+background:#111;
+padding:25px;
+border-radius:15px;
+max-width:500px;
+margin:auto;
+box-shadow:0 0 15px #ff69b4;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.logo img{
+width:60px;
+}
+
+.logo h1{
+font-size:24px;
+}
+
+.container{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:90%;
+max-width:300px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+<img src="https://image2url.com/r2/default/images/1773584247303-f433d476-24e9-4fbf-b3d4-b86ae3797059.png" alt="image">
+
+<h1>Cici Store</h1>
+
+<img src="https://image2url.com/r2/default/images/1773584247303-f433d476-24e9-4fbf-b3d4-b86ae3797059.png" alt="image">
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h2>Nikmati Streaming Premium Murah</h2>
+<p>Netflix • Spotify • YouTube • Canva • HBO Max • Viu • Vidio • CapCut • WeTV</p>
+
+</section>
+
+<section class="container">
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
+<h3>Netflix Premium</h3>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg">
+<h3>Spotify Premium</h3>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+<h3>YouTube Premium</h3>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEVvsHtm2-WOrnjXwFqRj0DnC3Gx13HLmP-A&s">
+<h3>Canva Pro</h3>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/HBO_Max_Logo.svg">
+<h3>HBO Max</h3>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Viu_logo.svg/3840px-Viu_logo.svg.png">
+<h3>Viu Premium</h3>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo_Vidio.png">
+<h3>Vidio Premier</h3>
+<button onclick="order()">Order</button>
+</div>
+
+<div class="card">
+<img src="https://temanakun.com/wp-content/uploads/2024/11/Capcut-Pro.jpg">
+<h3>CapCut Pro</h3>
+<button onclick="order()">Order</button>
+</div>
+
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd1bGQObBcH5_zL0MxTQWVGGDT_XLoD-vDIQ&s">
+<h3>WeTV VIP</h3>
+<button onclick="order()">Order</button>
+</div>
+
+</section>
+
+<section class="trailer">
+
+<h2>Trailer Film</h2>
+
+<div class="trailer-container">
+
+<a href="https://youtu.be/zuZnRUcoWos" target="_blank">
+<img src="https://img.youtube.com/vi/zuZnRUcoWos/maxresdefault.jpg">
+</a>
+
+<a href="https://youtu.be/i36Zw32GfRQ?si=MlzHI9pYJ7oa7npG" target="_blank">
+<img src="https://static.promediateknologi.id/crop/0x0:0x0/1200x800/webp/photo/p1/209/2026/03/13/reminders-293623907.jpg">
+</a>
+
+<a href="https://youtu.be/AnZePbb4uog" target="_blank">
+<img src="https://img.youtube.com/vi/AnZePbb4uog/maxresdefault.jpg">
+</a>
+
+</div>
+
+</section>
+
+<section class="pricelist">
+
+<h2>💎 PRICELIST PREMIUM APPS 💎</h2>
+
+<div class="price-box">
+
+<h3>🍿 Netflix Sharing</h3>
+<p>1 Bulan : 30k</p>
+<p>3 Bulan : 80k</p>
+<p>6 Bulan : 140k</p>
+<p>1 Tahun : 220k</p>
+
+<h3>🎬 Netflix Private</h3>
+<p>1 Bulan : 56k</p>
+<p>3 Bulan : 120k</p>
+<p>6 Bulan : 200k</p>
+<p>1 Tahun : 440k</p>
+
+<h3>🎧 Spotify</h3>
+<p>1 Bulan : 30k</p>
+
+<h3>🎨 Canva</h3>
+<p>1 Bulan : 20k</p>
+<p>3 Bulan : 40k</p>
+<p>1 Tahun : 110k</p>
+
+</div>
+
+<div class="payment">
+
+<h3>💳 Metode Pembayaran</h3>
+
+<p>BCA</p>
+<p>5150301981</p>
+<p>A/n Christin Natalia</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Cici Store</p>
+
+</footer>
+
+<script>
+
+function order(){
+window.open(
+"https://wa.me/6283148476222?text=Halo%20kak,%20saya%20ingin%20order%20premium.",
+"_blank"
+);
+}
+
+</script>
+
+</body>
+</html>
+```
